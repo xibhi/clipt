@@ -1,0 +1,57 @@
+# --copy / copy
+"Copied {n} characters to clipboard."
+"Text saved to clipboard ({n} characters)."
+"Content copied to clipboard ({n} characters)."
+
+# --copy --file / copy --file
+"File contents copied to clipboard ({n} characters)."
+"Read file and copied {n} characters to clipboard."
+
+# --snatch / ocopy
+"Command output copied to clipboard ({n} chars)."
+"Captured command output ({n} chars) and copied to clipboard."
+
+# --recall / recall
+"Entry {n} (ID: {id}) recalled to clipboard."
+"Recalled history entry {n} (ID: {id}) to clipboard."
+
+# --clear / clear
+"Cleared {deleted} unpinned entries. Kept {pinned} pinned entries."
+"Unpinned entries deleted ({deleted} removed, {pinned} pinned items preserved)."
+
+# --pin / pin
+"Pinned entry {n} (ID: {id})."
+"Entry {n} (ID: {id}) pinned. Protected from history deletion."
+
+# --unpin / unpin
+"Unpinned entry {n} (ID: {id})."
+"Removed pin from entry {n} (ID: {id})."
+
+# --kill / kill
+"Deleted entry {n} (ID: {id})."
+"Removed entry {n} (ID: {id}) from clipboard history."
+
+# --wipe / kaboom
+"Deleted all {deleted} history entries."
+"Cleared entire history ({deleted} entries deleted) and emptied clipboard."
+
+# --share (paste.rs) / share (paste.rs) / share
+"Uploaded to paste.rs. Link copied to clipboard:\n{url}"
+"Shared to paste.rs. URL copied to clipboard:\n{url}"
+"Paste created. Link copied to clipboard:\n{url}"
+
+# --init / init
+"{message}\n\nInstallation complete. clipt command is now available system-wide."
+"{message}\n\nPATH configured. Restart your terminal to use clipt anywhere."
+"{message}\n\nSetup complete. clipt is now available in your PATH."
+
+# --uninstall / uninstall
+"{message}\n\nclipt and all associated data have been completely removed."
+"{message}\n\nSuccessfully uninstalled clipt. All associated data has been completely removed."
+
+# --stats header / stats header
+"Clipboard History Statistics"
+
+# --log empty state / history empty state / history empty
+"Clipboard history is empty. Nothing copied yet."
+"No entries in clipboard history."

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipt"
+version = "1.0.0"
+description = "A fast, opinionated terminal clipboard manager for developers."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "clipt" }]
+dependencies = [
+  "typer>=0.12.0,<1.0.0",
+  "rich>=13.0.0,<14.0.0",
+  "pyperclip>=1.8.2,<2.0.0",
+  "requests>=2.31.0,<3.0.0",
+  "tomli>=2.0.0,<3.0.0; python_version < '3.11'",
+]
+
+[project.scripts]
+clipt = "clipt.main:main"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = {"clipt" = "."}
+packages = ["clipt"]
+
+[tool.setuptools.package-data]
+clipt = [".clipt-messages/*"]
