@@ -1,0 +1,99 @@
+# Clipboard is empty / clipboard is empty
+"Clipboard is empty."
+"No content found in clipboard."
+
+# --copy no input given / copy no input given
+"No input provided. Provide text in quotes: clipt copy \"<text>\", use --file, or pipe via stdin."
+"Provide text in double quotes: clipt copy \"<text>\". Wrap in double quotes if your text contains shell characters like <, >, |, &, $, or ;."
+
+# --copy --file file not found / copy --file file not found
+"File not found: '{path}'."
+"Cannot read '{path}'. File does not exist."
+
+# --copy --file not valid text / copy --file not valid text
+"Cannot copy '{path}': File is not a valid text file. Please provide a valid text file whose content can be copied."
+"File '{path}' contains binary data. Please provide a valid text file to copy."
+
+# --kill / delete index out of range / kill index out of range
+"No history entry found at index {n}."
+"Index {n} is out of range. Run 'clipt history' to view available entries."
+
+# --kill / delete trying to delete a pinned item / kill trying to delete a pinned item
+"Cannot delete a pinned entry. Run 'clipt unpin {n}' first."
+"Pinned entries cannot be deleted. Unpin the entry before removing it."
+
+# --pin index out of range / pin index out of range
+"No history entry found at index {n}."
+"Index {n} is out of range. Check available entries with 'clipt history'."
+
+# --unpin index out of range / unpin index out of range
+"No history entry found at index {n}."
+"Index {n} is not pinned or does not exist."
+
+# --share upload failed (paste.rs) / share upload failed (paste.rs) / share upload failed
+"Failed to upload to paste.rs. Please check your network connection."
+"Upload to paste.rs failed. Check your internet connection and try again."
+
+# --share empty / share empty
+"No content to share. Your clipboard is empty. Provide text, an index, an ID, or a command: clipt share <text|index|id|command>"
+"Clipboard is empty. Pass text, an index, an ID, or a command to share: clipt share <text|index|id|command>"
+
+# --search no results / grep no results
+"No entries matching '{query}' found in history."
+"No matches found for '{query}'."
+
+# --history empty / history empty
+"Clipboard history is empty."
+"No history entries found."
+
+# --pins no pinned items / pins no pinned items
+"No pinned entries found. Use 'clipt pin <index|id>' to pin an entry."
+"No pinned items in history."
+
+# --wipe nothing to wipe / kaboom nothing to wipe
+"History is already empty."
+
+# --wipe confirmation declined / kaboom confirmation declined
+"Operation cancelled. History unchanged."
+
+# --clear confirmation declined / clear confirmation declined
+"Operation cancelled. Clipboard and history unchanged."
+
+# pyperclip not set up (Linux, xclip missing)
+"Clipboard tool not found. Install xclip or xsel on Linux:\n  sudo apt install xclip  or  sudo pacman -S xclip"
+
+# General unexpected crash
+"An unexpected error occurred."
+"Command failed due to an unexpected error."
+
+# pin no input / --pin no input
+"No target provided. Usage: clipt pin <index|id>"
+"Provide an index or 10-digit ID to pin: clipt pin <index|id>"
+
+# unpin no input / --unpin no input
+"No target provided. Usage: clipt unpin <index|id>"
+"Provide an index or 10-digit ID to unpin: clipt unpin <index|id>"
+
+# kill no input / --kill no input
+"No target provided. Usage: clipt kill <index|id>"
+"Provide an index or 10-digit ID to delete: clipt kill <index|id>"
+
+# grep no input / --grep no input / search no input
+"No search query provided. Usage: clipt grep <query>"
+"Provide a search query: clipt grep <query>"
+
+# recall no input / --recall no input
+"No target provided. Usage: clipt recall <index|id>"
+"Provide an index or 10-digit ID to recall: clipt recall <index|id>"
+
+# recall index out of range / --recall index out of range
+"No history entry found at index {n}."
+"Index {n} is out of range. Run 'clipt history' to view available entries."
+
+# --uninstall / uninstall
+"Failed to completely remove clipt from your system:\n{message}"
+"Uninstallation failed:\n{message}"
+
+# --init / init
+"Installation failed:\n{message}"
+"Failed to configure clipt in PATH:\n{message}"
